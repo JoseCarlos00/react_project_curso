@@ -6,10 +6,10 @@ import { TwitterFollowCard } from './TwitterFollowCard'
 
   return (
     <section className='App'>
-      <TwitterFollowCard formattedUserName={formattedUserName} isFollowing userName="midudev" name="Miguel Angel Duran" />
-      <TwitterFollowCard formattedUserName={formattedUserName} isFollowing userName="pherald" name="Pablo Hernandez" />
-      <TwitterFollowCard formattedUserName={formattedUserName} isFollowing userName="elonmusk" name="Elon Musk" />
-      <TwitterFollowCard formattedUserName={formattedUserName}  userName="vxnder" name="Vanderhart" />
+      <TwitterFollowCard formattedUserName={format} isFollowing userName="midudev" name="Miguel Angel Duran" />
+      <TwitterFollowCard formattedUserName={format} isFollowing userName="pherald" name="Pablo Hernandez" />
+      <TwitterFollowCard formattedUserName={format} isFollowing userName="elonmusk" name="Elon Musk" />
+      <TwitterFollowCard formattedUserName={format}  userName="vxnder" name="Vanderhart" />
    </section>
   )
 }

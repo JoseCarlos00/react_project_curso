@@ -10,7 +10,7 @@ export function TwitterFollowCard ({formattedUserName, userName, name, isFollowi
           /> 
           <div className='tw-followCcard-info'>
             <strong>{name}</strong>
-            <span>{formattedUserName}</span>
+            <span>{formattedUserName()}</span>
           </div>
         </header>
         <aside>
