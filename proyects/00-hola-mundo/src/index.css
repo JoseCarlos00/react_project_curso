@@ -8,6 +8,11 @@ body {
   color: #fff;
 }
 
+a {
+  text-decoration: none;
+  margin-bottom: 16px;
+}
+
 .App {
   display: flex;
   flex-direction: column;

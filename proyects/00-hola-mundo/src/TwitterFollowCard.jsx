@@ -1,5 +1,7 @@
-export function TwitterFollowCard ({formattedUserName, userName, name, isFollowing}) {
-  console.log(isFollowing);
+export function TwitterFollowCard ({ formattedUserName, userName, name, number, isFollowing }) {
+  console.log(isFollowing);   
+  console.log(number);
+  
   return (
     <div>
       <article className='tw-followCcard'>
@@ -10,7 +12,7 @@ export function TwitterFollowCard ({formattedUserName, userName, name, isFollowi
           /> 
           <div className='tw-followCcard-info'>
             <strong>{name}</strong>
-            <span>{formattedUserName()}</span>
+            <span>{formattedUserName(userName)}</span>
           </div>
         </header>
         <aside>
