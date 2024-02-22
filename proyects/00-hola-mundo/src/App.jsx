@@ -4,12 +4,25 @@ import { TwitterFollowCard } from './TwitterFollowCard'
   const format = (userName) => `@${userName}`
   // const formattedUserName = <span>@{'UserName'}</span>
 
+  const midu = {  isFollowing: true, userName: "midudev", formattedUserName:format}
+
   return (
     <section className='App'>
-      <TwitterFollowCard formattedUserName={format} number={[1,2,3]} isFollowing userName="midudev" name="Miguel Angel Duran" />
-      <TwitterFollowCard formattedUserName={format} isFollowing userName="pherald" name="Pablo Hernandez" />
-      <TwitterFollowCard formattedUserName={format} isFollowing userName="elonmusk" name="Elon Musk" />
-      <TwitterFollowCard formattedUserName={format}  userName="vxnder" name="Vanderhart" />
+      <TwitterFollowCard {...midu} >
+      Miguel Angel Duran
+      </TwitterFollowCard>
+
+
+      <TwitterFollowCard formattedUserName={format} isFollowing userName="pherald">
+      Pablo Hernandez
+      </TwitterFollowCard>
+
+      <TwitterFollowCard formattedUserName={format} isFollowing userName="elonmusk" >
+      Elon Musk
+      </TwitterFollowCard>
+      <TwitterFollowCard formattedUserName={format}  userName="vxnder">
+      Vanderhart
+      </TwitterFollowCard>
    </section>
   )
 }
